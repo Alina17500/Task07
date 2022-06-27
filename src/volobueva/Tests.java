@@ -21,7 +21,7 @@ public class TestOfFindingMinCycle {
     @Parameterized.Parameters
     public static List<Object[]> cases() {
         return Arrays.asList(new Object[][]{
-                {7, 4},
+                {5, 4},
         });
     }
 
