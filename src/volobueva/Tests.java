@@ -29,14 +29,14 @@ public class TestOfFindingMinCycle {
     public void testOfFinding() throws Exception {
         for (int i = 0; i < MinCycle.N; i++)
             MinCycle.graph[i] = new Vector<>();
-
-        MinCycle.addEdge(0, 6);
-        MinCycle.addEdge(0, 5);
-        MinCycle.addEdge(5, 1);
-        MinCycle.addEdge(1, 6);
-        MinCycle.addEdge(2, 6);
+    MinCycle.addEdge(0, 1);
+        
+        MinCycle.addEdge(0, 4);
+        MinCycle.addEdge(0, 3);
+        MinCycle.addEdge(0, 2);
         MinCycle.addEdge(2, 3);
         MinCycle.addEdge(3, 4);
+        MinCycle.addEdge(3, 1);
         MinCycle.addEdge(4, 1);
 
         int actualResult = MinCycle.findShortestCycle(n);
